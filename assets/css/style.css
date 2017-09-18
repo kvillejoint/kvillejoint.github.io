@@ -1,55 +1,76 @@
 body {
     padding-top: 50px;
-  }
+}
 
-  navbar {
-      background-color: black;
-  }
-  nav a {
+navbar {
+    background-color: black;
+}
+nav a {
     padding-top: 20px !important;
     padding-bottom: 20px !important;
     font-size: 18px;
-  }
-  
-  nav .navbar-toggle {
+}
+
+nav .navbar-toggle {
     margin: 13px 15px 13px 0;
-  }
-  
-  .navbar-brand {
+}
+
+.navbar-brand {
     font-size: 30px;
     color: white;
-  }
-  
-  nav.navbar.shrink {
+}
+
+nav.navbar.shrink {
     min-height: 35px;
-  }
-  
-  nav.shrink a {
+}
+
+nav.shrink a {
     padding-top: 10px !important;
     padding-bottom: 10px !important;
     font-size: 15px;
-  }
-  
-  nav.shrink .navbar-brand {
+}
+
+nav.shrink .navbar-brand {
     font-size: 25px;
-  }
-  
-  nav.shrink .navbar-toggle {
+}
+
+nav.shrink .navbar-toggle {
     padding: 4px 5px;
     margin: 8px 15px 8px 0;
-  }
+}
 
 header {
     margin: 25px;
 }
-  #headshot {
+#headshot {
     border-radius: 50%;
     height: 400px;
     width: auto;
     display: block;
     margin: 0 auto;
-  }
+}
 
-  #center {
-      text-align: center;
-  }
+#center, .intro-text {
+    text-align: center;
+}
+
+header {
+    margin: 0 auto;
+    padding: 15px;
+    background-color: lightgrey;
+    color: black;
+}
+
+#header-name {
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-align: center;
+    font-size: 65px;
+}
+
+#header-skills {
+    text-align: center;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    
+}
+

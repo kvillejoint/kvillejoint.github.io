@@ -10,11 +10,15 @@
 
     <title>Kamal Villejoint Portfolio</title>
   
-    <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <!-- Link to Reset CSS -->
+  <link rel="stylesheet" type="text/css" href="./assets/css/reset.css"></link>
+  <!-- Link to Boostrap CDN -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Link to Style CSS -->
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css"></link>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!-- Link to jQuery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -23,12 +27,6 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-  <!-- Custom styles for this template -->
-  <link href="./assets/css/style.css" rel="stylesheet">
-  <!-- Custom scripts for this template -->
-  <script src="./assets/javascript/logic.js"></script>
-
   </head>
 
   <body id="page-top">
@@ -45,7 +43,7 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav pull-right">
-            <!-- <li class="active"><a href="#">Home</a></li> -->
+            <li class="active"><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -54,16 +52,19 @@
       </div>
     </nav>
     
-
     <!-- Header -->
     <header class="masthead">
       <div class="container">
+          <br />
+          <br />
         <img class="img-fluid" id="headshot" src="./assets/img/kv-headshot.jpg" alt="">
+        <br />
+        <br />
         <div class="intro-text">
-          <span class="name">Kamal Villejoint</span>
+          <span class="name" id="header-name"><strong>Kamal M. Villejoint</strong></span>
           <br />
           <br />
-          <span class="skills" id="center">Web Developer | Data Analyst | Data Visualization | Project Management</span>
+          <span class="skills" id="header-skills">Web Development | Data Analytics | Data Visualization | Project Management</span>
         </div>
       </div>
     </header>
@@ -273,7 +274,6 @@
     </footer>
 
   </body>
-  <script src="/lib/jquery.min.js"></script>
-  <script src="/lib/jquery.plugin.js"></script>
+
 
 </html>
