@@ -50,7 +50,9 @@ header {
     margin: 0 auto;
 }
 
-#center, .intro-text {
+#center,
+.intro-text,
+.tech-stack {
     text-align: center;
 }
 
@@ -73,4 +75,48 @@ header {
     font-size: 20px;
     
 }
+p {
+    text-align: center;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 20px;
+}
+footer {
+    background-color: #222;
+    color: white;
+}
 
+/* .portfolio {
+    display: none;
+    border:1px solid #000;
+    height:30px;
+    width:290px;
+    margin-left:10px; 
+}
+
+a:hover + p {
+    display: block;
+} */
+
+.thumbnail {
+    position:relative;
+    overflow:hidden;
+}
+ 
+.caption {
+    position:absolute;
+    top:0;
+    right:0;
+    background:rgba(90, 90, 90, 0.75);
+    width:100%;
+    height:100%;
+    padding:2%;
+    display: none;
+    text-align: left;
+    color:#fff !important;
+    z-index:2;
+}
+
+i {
+    height: 400px;
+    width: 300px;
+}
