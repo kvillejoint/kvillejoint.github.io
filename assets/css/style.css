@@ -116,7 +116,6 @@ a:hover + p {
     z-index:2;
 }
 
-i {
-    height: 400px;
-    width: 300px;
+#icon-format {
+    font-size: 15rem;
 }
