@@ -1,12 +1,30 @@
 $(document).ready(function() {
-  $("[rel='tooltip']").tooltip();    
+    $("[rel='tooltip']").tooltip();    
 
-  $('.thumbnail').hover(
-      function(){
-          $(this).find('.caption').slideDown(250); //.fadeIn(250)
-      },
-      function(){
-          $(this).find('.caption').slideUp(250); //.fadeOut(205)
-      }
-  ); 
+    $('.about').on('click', function () {
+        $('html, body').animate({
+            scrollTop: $("#about").offset().top
+        }, 1000);
+    });
+
+    $('.techStack').on('click', function () {
+        $('html, body').animate({
+            scrollTop: $("#techStack").offset().top
+        }, 1000);
+    });
+
+    $('.portfolio').on('click', function () {
+        $('html, body').animate({
+            scrollTop: $("#portfolio").offset().top
+        }, 1000);
+    });
+
+    $('.contact-me').on('click', function () {
+        $('html, body').animate({
+            scrollTop: $("#contact-me").offset().top
+        }, 1000);
+    });
+
+    
+
 });

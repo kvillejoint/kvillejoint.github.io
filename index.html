@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -14,6 +15,12 @@
   <!-- Link to Boostrap CDN -->
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
     crossorigin="anonymous">
+  <!-- Link to Materialize CDN -->
+    <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
     crossorigin="anonymous">
   <!-- Custom fonts for this template -->
@@ -47,9 +54,10 @@
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav pull-right">
           <li class="active"><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about" class="about">About</a></li>
+          <li><a href="#techStack" class="techStack">Tech Stack</a></li>
+          <li><a href="#portfolio" class="portfolio">Portfolio</a></li>
+          <li><a href="#contact" class="contact-me">Contact</a></li>
         </ul>
       </div>
       <!--/.nav-collapse -->
@@ -60,13 +68,10 @@
   <header class="masthead">
     <div class="container">
       <br />
-      <br />
       <img class="img-fluid" id="headshot" src="./assets/img/kv-headshot.jpg" alt="">
-      <br />
       <br />
       <div class="intro-text">
         <span class="name" id="header-name"><strong>Kamal M. Villejoint</strong></span>
-        <br />
         <br />
         <span class="skills" id="header-skills">Web Development | Data Analytics | Data Visualization | Project Management</span>
       </div>
@@ -76,9 +81,9 @@
   <!-- About Section -->
   <section class="success" id="about">
     <div class="container">
-      <h2 class="text-center"><strong>ABOUT</strong></h2>
-      <hr>
       <div class="row">
+        <h2 class="text-center"><strong>SUMMARY</strong></h2>
+        <hr />
         <div class="col-lg-12 ml-auto">
           <p>I am a Web Developer with a 6+ year background in data analytics, HR operations, and marketing. My skills include
             full-stack software development, project management, information systems, employee training, and process improvement.
@@ -87,16 +92,16 @@
         </div>
       </div>
     </div>
+  </section>
+
     <br />
-    
-    
-
-
+  
+  <section id="techStack">
     <div class="container">
       <div class="row">
         <h2 class="text-center"><strong>TECH STACK</strong></h2>
         <hr>
-        <div class="col s12 tech-stack"> 
+        <div class="col-md-12 tech-stack-format"> 
           <i class="devicon-html5-plain-wordmark colored" id="icon-format" input="HTML"></i>
           <i class="devicon-css3-plain-wordmark colored" id="icon-format"></i>
           <i class="devicon-javascript-plain colored" id="icon-format"></i>
@@ -104,9 +109,11 @@
           <i class="devicon-github-plain-wordmark colored" id="icon-format"></i>
           <i class="devicon-nodejs-plain-wordmark colored" id="icon-format"></i>
         </div>
+      </div>
         <br />
         <br />
-        <div class="col s12 tech-stack">
+      <div class="row">
+        <div class="col-sm-12 tech-stack-format">
             <i class="devicon-mysql-plain-wordmark colored" id="icon-format"></i>
             <i class="devicon-sequelize-plain-wordmark colored" id="icon-format"></i>
             <i class="devicon-mongodb-plain-wordmark colored" id="icon-format"></i>
@@ -114,7 +121,7 @@
             <i class="devicon-react-original-wordmark colored" id="icon-format"></i>
             <i class="devicon-heroku-original-wordmark colored" id="icon-format"></i>
             <i class="devicon-firebase-original-wordmark colored" id="icon-format"></i>
-            <img href="./assets/img/firebase.png"></img>
+            <!-- <img src="./assets/img/icons/firebase.PNG"></img> -->
           </div>
       </div>
     </div>
@@ -129,116 +136,126 @@
 
 
       <div class="row">
-
-
-        <!-- TH1 -->
-        <div class="col-sm-4">
-          <div class="thumbnail">
-            <a href="#" class="">
-              <div class="caption">
-                <h4 class="">Thumbnail Headline</h4>
-
-                <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-
-
-                </p>
+        <!-- Project 1 -->
+          <div class="col s4">
+            <div class="card blue-grey darken-1">
+              <div class="card-content white-text">
+                <span class="card-title">NY Times React</span>
+                <p>New York Times Article Search application allowing users to share and save articles to a database based on topic searches.</p>
+                <br />
+                <p>Tech Used: HTML, CSS, JavaScript, API, Node JS, Express JS, React JS, MongoDB</p>
               </div>
-              <img src="http://placehold.it/350x250" alt="..." class="">
-            </a>
-          </div>
-        </div>
-
-        <!-- TH2 -->
-        <div class="col-sm-4">
-          <div class="thumbnail">
-            <a href="#" class="">
-              <div class="caption">
-                <h4 class="">Thumbnail Headline</h4>
-
-                <p class="">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
-
-
-
-                </p>
+              <div class="card-action">
+                <a href="https://github.com/kvillejoint/NYT-React">View GitHub Repo</a>
+                <!-- <a href="#">This is a link</a> -->
               </div>
-              <img src="http://placehold.it/350x250" alt="..." class="">
-            </a>
+            </div>
           </div>
-        </div>
-
-        <!-- TH2 -->
-        <div class="col-sm-4">
-          <div class="thumbnail">
-            <a href="#" class="">
-              <div class="caption">
-                <h4 class="">Thumbnail Headline</h4>
-
-                <p class="">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
-
-                </p>
+        
+        <!-- Project 2 -->
+            <div class="col s4">
+              <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                  <span class="card-title">Bamazon</span>
+                  <p>Online storefront application that tracks product sales and database changes to inventory.</p>
+                  <br />
+                  <p>Tech Used: HTML, CSS, MySQL, Node JS</p>
+                </div>
+                <div class="card-action">
+                  <a href="https://github.com/kvillejoint/Bamazon">View GitHub Repo</a>
+                  <!-- <a href="#">This is a link</a> -->
+                </div>
               </div>
-              <img src="http://placehold.it/350x250" alt="..." class="">
-            </a>
-          </div>
-        </div>
-
-        <!-- TH4 -->
-        <div class="col-sm-4">
-          <div class="thumbnail">
-            <div class="caption">
-              <h4 class="">Thumbnail Headline</h4>
-
-              <p class="">
-
-                <a href="#" class="label label-default">Open</a>
-
-              </p>
             </div>
-            <img src="http://placehold.it/350x250" alt="..." class="">
-          </div>
-        </div>
 
-        <!-- TH5 -->
-        <div class="col-sm-4">
-          <div class="thumbnail">
-            <div class="caption">
-              <h4 class="">Thumbnail Headline</h4>
 
-              <p class="">
+        <!-- Project 3 -->
 
-                <a href="#" class="label label-default">Open</a>
-
-              </p>
+            <div class="col s4">
+              <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                  <span class="card-title">Friend Finder</span>
+                  <p>A compatibility-based web application to find friends based on user survey input.</p>
+                  <br />
+                  <p>Tech Used: HTML, CSS, JavaScript, API Routing, Node JS, Express JS</p>
+                </div>
+                <div class="card-action">
+                  <a href="https://github.com/kvillejoint/Friend-Finder">View GitHub Repo</a>
+                  <!-- <a href="#">This is a link</a> -->
+                </div>
+              </div>
             </div>
-            <img src="http://placehold.it/350x250" alt="..." class="">
           </div>
-        </div>
+      <!-- Second row of projects -->
+            
+        <div class="row">
+        <!-- Project 4 -->
 
-
-        <!-- TH6 -->
-        <div class="col-sm-4">
-          <div class="thumbnail">
-            <div class="caption">
-              <h4 class="">Thumbnail Headline</h4>
-
-              <p class="">
-
-                <a href="#" class="label label-default">Open</a>
-
-              </p>
+            <div class="col s4">
+              <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                  <span class="card-title">Train Scheduler</span>
+                  <p>I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class="card-action">
+                  <a href="https://github.com/kvillejoint/TrainScheduler">View GitHub Repo</a>
+                  <!-- <a href="#">This is a link</a> -->
+                </div>
+              </div>
             </div>
-            <img src="http://placehold.it/350x250" alt="..." class="">
-          </div>
-        </div>
-
-        <!-- TH6 -->
 
 
+        <!-- Project 5 -->
+
+            <div class="col s4">
+              <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                  <span class="card-title">Card Title</span>
+                  <p>I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">View GitHub Repo</a>
+                  <!-- <a href="#">This is a link</a> -->
+                </div>
+              </div>
+            </div>
+
+
+
+        <!-- Project 6 -->
+            <div class="col s4">
+              <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                  <span class="card-title">Card Title</span>
+                  <p>I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">View GitHub Repo</a>
+                  <!-- <a href="#">This is a link</a> -->
+                </div>
+              </div>
+            </div>
+          <!-- Closes second row of project -->
       </div>
-      <!--/row -->
-
-
-
+      
+      <!-- For future use in enhanced cards for project area
+      <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="images/office.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+            <p><a href="#">This is a link</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div> -->
+        
     </div>
   </section>
 
@@ -246,15 +263,17 @@
   <br />
 
   <!-- Contact Section -->
-  <section id="contact">
+  <section id="contact-me">
     <div class="container">
       <h2 class="text-center"><strong>CONTACT ME</strong></h2>
       <hr />
       <div class="row">
         <div class="col-lg-8 mx-auto">
+
           <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
           <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-          <form name="sentMessage" id="contactForm" novalidate>
+          
+          <!-- <form name="sentMessage" id="contactForm" novalidate>
             <div class="control-group">
               <div class="form-group floating-label-form-group controls">
                 <label>Name</label>
@@ -291,8 +310,8 @@
           </form>
         </div>
       </div>
-    </div>
-  </section>
+    </div> -->
+  </section> 
 
   <!-- Footer -->
   <footer class="text-center">
@@ -304,17 +323,17 @@
             <ul class="list-inline">
               <li class="list-inline-item">
                 <a class="btn-social btn-outline" href="https://www.linkedin.com/in/kamal-villejoint">
-                    <i class="fa fa-fw fa-linkedin"></i>
+                  <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
                   </a>
               </li>
               <li class="list-inline-item">
                 <a class="btn-social btn-outline" href="https://github.com/kvillejoint">
-                    <i class="fa fa-fw fa-github"></i>
+                  <i class="fa fa-github-square fa-2x" aria-hidden="true"></i>
                   </a>
               </li>
               <li class="list-inline-item">
                 <a class="btn-social btn-outline" href="https://stackoverflow.com/cv/kvillejoint">
-                    <i class="fa fa-fw fa-stack-overflow"></i>
+                  <i class="fa fa-stack-overflow fa-2x" aria-hidden="true"></i>
                   </a>
               </li>
             </ul>
@@ -326,7 +345,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            Copyright &copy; kvillejoint@github.io 2017
+            Copyright &copy; 2017
           </div>
         </div>
       </div>
