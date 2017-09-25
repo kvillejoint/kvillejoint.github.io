@@ -145,9 +145,20 @@ header {
 
 .divider {
     background-color: #222;
-    min-height: 50px;
+    min-height: 80px;
 }
 
 .highlights {
     text-align: center;
+}
+.summary {
+    font-size: 17px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+li {
+    font-size: 16px;
 }
